@@ -1,0 +1,14 @@
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.AssemblyInfoInputs.cache
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.AssemblyInfo.cs
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.csproj.CoreCompileInputs.cache
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/bin/Debug/net10.0/DataStructuresAndAlgorithms
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/bin/Debug/net10.0/DataStructuresAndAlgorithms.deps.json
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/bin/Debug/net10.0/DataStructuresAndAlgorithms.runtimeconfig.json
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/bin/Debug/net10.0/DataStructuresAndAlgorithms.dll
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/bin/Debug/net10.0/DataStructuresAndAlgorithms.pdb
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.dll
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/refint/DataStructuresAndAlgorithms.dll
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.pdb
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.genruntimeconfig.cache
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/ref/DataStructuresAndAlgorithms.dll
