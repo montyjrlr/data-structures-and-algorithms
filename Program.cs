@@ -4,8 +4,8 @@ using System.Text.Json;
 var line = Console.ReadLine();
 while ("exit" != line)
 {
-    var arrays = JsonSerializer.Deserialize<int[][]>(line);
-    Console.WriteLine(Solution.FindMedianSortedArrays(arrays[0], arrays[1]));
+    // var arrays = JsonSerializer.Deserialize<int[][]>(line);
+    Console.WriteLine(Solution.LongestPalindrome(line));
     line = Console.ReadLine();
 }
 
@@ -138,5 +138,35 @@ public static class Solution {
         }
 
         return result.ToArray();
+    }
+
+    public static string LongestPalindrome(string s) {
+        int start     = 0;
+        int maxLength = 1;
+        for (int i = 0; i < s.Length; i++)
+        {
+            // odd
+            subPalindome(i, i, s, ref start, ref maxLength);
+
+            // even
+            subPalindome(i, i + 1, s, ref start, ref maxLength);
+        }
+
+        return s.Substring(start, maxLength);
+    }
+
+    public static void subPalindome(int left, int right, string s, ref int start, ref int max)
+    {
+        while (left >= 0 && right < s.Length && s[left] == s[right] )
+        {
+            var newMax = right - left + 1;
+            if(newMax > max)
+            {
+                start = left;
+                max =  newMax;
+            }
+            left--;
+            right++;
+        }
     }
 }

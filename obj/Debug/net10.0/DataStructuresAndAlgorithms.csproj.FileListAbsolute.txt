@@ -12,3 +12,4 @@
 /Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.pdb
 /Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.genruntimeconfig.cache
 /Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/ref/DataStructuresAndAlgorithms.dll
+/Users/jose/Documents/Estudio/C#/DataStructuresAndAlgorithms/obj/Debug/net10.0/DataStructuresAndAlgorithms.sourcelink.json
