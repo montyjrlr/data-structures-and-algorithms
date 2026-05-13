@@ -4,8 +4,8 @@ using System.Text.Json;
 var line = Console.ReadLine();
 while ("exit" != line)
 {
-    // var arrays = JsonSerializer.Deserialize<int[][]>(line);
-    Console.WriteLine(Solution.LongestPalindrome(line));
+    var arrays = JsonSerializer.Deserialize<string[]>(line);
+    Console.WriteLine(Solution.ZizagConvert(arrays[0], Int32.Parse(arrays[1])));
     line = Console.ReadLine();
 }
 
@@ -146,16 +146,16 @@ public static class Solution {
         for (int i = 0; i < s.Length; i++)
         {
             // odd
-            subPalindome(i, i, s, ref start, ref maxLength);
+            SubPalindome(i, i, s, ref start, ref maxLength);
 
             // even
-            subPalindome(i, i + 1, s, ref start, ref maxLength);
+            SubPalindome(i, i + 1, s, ref start, ref maxLength);
         }
 
         return s.Substring(start, maxLength);
     }
 
-    public static void subPalindome(int left, int right, string s, ref int start, ref int max)
+    public static void SubPalindome(int left, int right, string s, ref int start, ref int max)
     {
         while (left >= 0 && right < s.Length && s[left] == s[right] )
         {
@@ -168,5 +168,41 @@ public static class Solution {
             left--;
             right++;
         }
+    }
+
+    public static string ZigzagConvert(string s, int numRows) {
+        if (numRows == 1 || s.Length <= numRows)
+            return s;
+
+        var rows = new List<char>[numRows];
+
+        for (int i = 0; i < numRows; i++)
+        {
+            rows[i] = new List<char>();
+        }
+
+        int currentRow = 0;
+        bool goingDown = true;
+
+        foreach (char c in s)
+        {
+            rows[currentRow].Add(c);
+
+            if (currentRow == 0)
+                goingDown = true;
+            else if (currentRow == numRows - 1)
+                goingDown = false;
+
+            currentRow += goingDown ? 1 : -1;
+        }
+
+        var result = new StringBuilder();
+
+        foreach (var row in rows)
+        {
+            result.Append(row.ToArray());
+        }
+
+        return result.ToString();
     }
 }
