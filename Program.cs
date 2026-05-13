@@ -1,11 +1,12 @@
 ﻿
+using System.Text;
 using System.Text.Json;
 
 var line = Console.ReadLine();
 while ("exit" != line)
 {
-    var arrays = JsonSerializer.Deserialize<string[]>(line);
-    Console.WriteLine(Solution.ZizagConvert(arrays[0], Int32.Parse(arrays[1])));
+    // var arrays = JsonSerializer.Deserialize<string[]>(line);
+    Console.WriteLine(Solution.Reverse(Int32.Parse(line)));
     line = Console.ReadLine();
 }
 
@@ -204,5 +205,20 @@ public static class Solution {
         }
 
         return result.ToString();
+    }
+
+      public static int Reverse(int x) {
+        int reversed = 0;
+
+        while (x != 0)
+        {
+            if (reversed > int.MaxValue / 10 || reversed < int.MinValue / 10)
+                return 0;
+
+            reversed = reversed * 10 + x % 10;
+            x = x / 10;
+        }
+
+        return reversed;
     }
 }
